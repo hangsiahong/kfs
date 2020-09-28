@@ -1,0 +1,14 @@
+#!/bin/bash
+# Author < HangsiaHONG hangsia@koompi.org >
+
+
+cd $KFS/sources
+tar -xf file-5.39.tar.gz
+cd file-5.39
+
+./configure --prefix=/usr --host=$KFS_TGT
+make
+make install
+
+cd $KFS/sources
+rm -rf file-5.39
