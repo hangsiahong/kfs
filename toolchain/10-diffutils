@@ -1,6 +1,6 @@
 #!/bin/bash
 # Author < HangsiaHONG hangsia@koompi.org >
-source ../config
+source config
 
 cd $KFS/sources
 tar -xf diffutils-3.7.tar.xz

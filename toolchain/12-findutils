@@ -1,8 +1,7 @@
 #!/bin/bash
 # Author < HangsiaHONG hangsia@koompi.org >
 
-source ../config
-
+source config
 
 cd $KFS/sources
 tar -xf findutils-4.7.0.tar.xz

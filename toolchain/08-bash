@@ -1,7 +1,8 @@
 #!/bin/bash
 # Author < HangsiaHONG hangsia@koompi.org >
 
-source ../config
+source config
+
 
 cd $KFS/sources
 tar -xf bash-5.0.tar.gz

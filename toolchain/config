@@ -1,0 +1,10 @@
+# config file for toolchain scripts
+# modify according your needs
+# Author HangsiaHONG <hangsia@koompi.org>
+
+MAKEFLAGS="-j7"
+KFS="/mnt/kfs"
+#KFS_TGT=$(uname -m)-kfs-linux-gnu
+#KFS_TGT32=i686-kfs-linux-gnu
+#SRCDIR=$KFS/var/lib/pkg/src
+#WORKDIR=$KFS/tmp
