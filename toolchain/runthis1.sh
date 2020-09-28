@@ -1,5 +1,6 @@
 #!/bin/bash
 # Author HangsiaHONG <hangsia@koompi.org>
+source ../config
 
 #CWD=$PWD
 bash $PWD/toolchain/01-binutils_pass_1 && echo 'Success Build 01' &&

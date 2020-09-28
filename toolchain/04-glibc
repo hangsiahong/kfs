@@ -2,6 +2,7 @@
 # Author < HangsiaHONG hangsia@koompi.org >
 
 
+source ../config
 
 cd $KFS/sources
 tar -xf glibc-2.32.tar.xz 

@@ -1,6 +1,7 @@
 #!/bin/bash
 # Author < HangsiaHONG hangsia@koompi.org >
  
+source ../config
 
 cd $KFS/sources
 tar -xf binutils-2.35.tar.xz

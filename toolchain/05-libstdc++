@@ -1,6 +1,7 @@
 #!/bin/bash
 # Author < HangsiaHONG hangsia@koompi.org >
 
+source ../config
 
 cd $KFS/sources
 tar -xf gcc-10.2.0.tar.xz

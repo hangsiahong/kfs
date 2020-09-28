@@ -1,6 +1,7 @@
 #!/bin/bash
 # Author < HangsiaHONG hangsia@koompi.org >
 
+source ../config
 
 cd $KFS/sources
 tar -xf grep-3.4.tar.xz
