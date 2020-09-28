@@ -30,8 +30,10 @@ cd       build
       --with-headers=$KFS/usr/include    \
       libc_cv_slibdir=/lib
 
-make
-make install
+make -j1
+make DESTDIR=$KFS install
+
+$KFS/tools/libexec/gcc/$LFS_TGT/10.2.0/install-tools/mkheaders
 
 cd $KFS/sources
 rm -rf glibc-2.32

@@ -21,7 +21,7 @@ cd       build
     --with-gxx-include-dir=/tools/$KFS_TGT/include/c++/10.2.0
 
 make
-make install
+make DESTDIR=$KFS install
 
 cd $KFS/sources
 rm -rf gcc-10.2.0

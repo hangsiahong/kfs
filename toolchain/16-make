@@ -13,7 +13,7 @@ cd make-4.3
             --build=$(build-aux/config.guess)
 
 make
-make install 
+make DESTDIR=$KFS install
 
 cd $KFS/sources
 rm -rf make-4.3

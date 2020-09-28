@@ -9,7 +9,7 @@ cd file-5.39
 
 ./configure --prefix=/usr --host=$KFS_TGT
 make
-make install
+make DESTDIR=$KFS install
 
 cd $KFS/sources
 rm -rf file-5.39

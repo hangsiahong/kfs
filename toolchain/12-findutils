@@ -11,8 +11,9 @@ cd findutils-4.7.0
             --host=$KFS_TGT \
             --build=$(build-aux/config.guess)
 
+
 make
-make install
+make DESTDIR=$KFS install
 
 mv -v $KFS/usr/bin/find $KFS/bin
 sed -i 's|find:=${BINDIR}|find:=/bin|' $KFS/usr/bin/updatedb

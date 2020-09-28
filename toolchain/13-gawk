@@ -14,7 +14,7 @@ sed -i 's/extras//' Makefile.in
             --build=$(./config.guess)
 
 make
-make install
+make DESTDIR=$KFS install
 
 cd $KFS/sources
 rm -rf gawk-5.1.0

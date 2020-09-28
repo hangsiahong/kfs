@@ -12,7 +12,7 @@ cd tar-1.32
             --bindir=/bin
 
 make
-make install
+make DESTDIR=$KFS install
 
 cd $KFS/sources
 rm -rf tar-1.32

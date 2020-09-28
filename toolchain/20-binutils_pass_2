@@ -20,7 +20,7 @@ cd       build
     --enable-64-bit-bfd
 
 make
-make install
+make DESTDIR=$KFS install
 
 cd $KFS/sources
 rm -rf binutils-2.35

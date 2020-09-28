@@ -16,7 +16,8 @@ echo "#define _IO_IN_BACKUP 0x100" >> lib/stdio-impl.h
             --build=$(build-aux/config.guess)
 
 make
-make install
+make DESTDIR=$KFS install
+
 
 cd $KFS/sources
 rm -rf m4-1.4.18

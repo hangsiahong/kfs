@@ -20,6 +20,7 @@ bash $PWD/toolchain/14-grep && echo 'Success Build 14' &&
 bash $PWD/toolchain/15-gzip && echo 'Success Build 15' &&
 bash $PWD/toolchain/16-make && echo 'Success Build 16' &&
 bash $PWD/toolchain/17-patch && echo 'Success Build 17' &&
+bash $PWD/toolchain/18-sed && echo 'Success Build 18' &&
 bash $PWD/toolchain/18-tar && echo 'Success Build 18' &&
 bash $PWD/toolchain/19-xz && echo 'Success Build 19' &&
 bash $PWD/toolchain/20-binutils_pass_2 && echo 'Success Build 20' &&

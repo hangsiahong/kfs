@@ -14,7 +14,8 @@ cd coreutils-8.32
             --enable-no-install-program=kill,uptime
 
 make
-make install
+make DESTDIR=$KFS install
+
 
 mv -v $KFS/usr/bin/{cat,chgrp,chmod,chown,cp,date,dd,df,echo} $KFS/bin
 mv -v $KFS/usr/bin/{false,ln,ls,mkdir,mknod,mv,pwd,rm}        $KFS/bin

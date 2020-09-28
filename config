@@ -8,3 +8,6 @@ KFS="/mnt/kfs"
 #KFS_TGT32=i686-kfs-linux-gnu
 #SRCDIR=$KFS/var/lib/pkg/src
 #WORKDIR=$KFS/tmp
+
+export MAKEFLAGS
+export KFS

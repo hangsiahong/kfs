@@ -45,7 +45,7 @@ ln -s ../../../libgcc/gthr-posix.h $KFS_TGT/libgcc/gthr-default.h
     --enable-languages=c,c++
 
 make
-make install 
+make DESTDIR=$KFS install
 ln -sv gcc $KFS/usr/bin/cc
 
 cd $KFS/sources

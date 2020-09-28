@@ -12,7 +12,7 @@ cd patch-2.7.6
 
 
 make
-make install
+make DESTDIR=$KFS install
 
 cd $KFS/sources
 rm -rf patch-2.7.6

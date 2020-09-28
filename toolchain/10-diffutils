@@ -8,7 +8,7 @@ cd diffutils-3.7
 
 ./configure --prefix=/usr --host=$KFS_TGT
 make
-make install 
+make DESTDIR=$KFS install
 
 cd $KFS/sources
 rm -rf diffutils-3.7

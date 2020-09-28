@@ -9,7 +9,7 @@ cd gzip-1.10
 
 ./configure --prefix=/usr --host=$KFS_TGT
 make
-make install
+make DESTDIR=$KFS install
 mv -v $KFS/usr/bin/gzip $KFS/bin
 
 cd $KFS/sources

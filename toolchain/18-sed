@@ -1,17 +1,16 @@
 #!/bin/bash
-# Author < HangsiaHONG hangsia@koompi.org >
 source config
 
 cd $KFS/sources
-tar -xf grep-3.4.tar.xz
-cd grep-3.4
+tar -xf sed-4.8.tar.xz
+cd sed-4.8
 
 ./configure --prefix=/usr   \
             --host=$KFS_TGT \
             --bindir=/bin
 
 make
-make DESTDIR=$KFS install
+make DESTDIR=$kFS install
 
 cd $KFS/sources
-rm -rf grep-3.4
+rm -rf sed-4.8
