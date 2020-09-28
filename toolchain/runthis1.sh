@@ -23,4 +23,4 @@ bash $PWD/toolchain/17-patch && echo 'Success Build 17' &&
 bash $PWD/toolchain/18-tar && echo 'Success Build 18' &&
 bash $PWD/toolchain/19-xz && echo 'Success Build 19' &&
 bash $PWD/toolchain/20-binutils_pass_2 && echo 'Success Build 20' &&
-bash $PWD/toolchain/21-gcc_pass_2 && echo 'Success Build 21' &&
+bash $PWD/toolchain/21-gcc_pass_2 && echo 'Success Build 21' 
