@@ -2,7 +2,10 @@
 # Author < HangsiaHONG hangsia@koompi.org >
 
 CWD=$PWD
-source $CWD/config
+#source $CWD/config
+KFS=/mnt/kfs
+
+export KFS
 
 create_part() {
     sudo parted --script /dev/sdb \
@@ -27,7 +30,7 @@ mount_part() {
 fetch_src() {
     mkdir -v $KFS/sources
 	chmod -v a+wt $KFS/sources
-	mv wget-list $KFS/sources
+	cp wget-list $KFS/sources
 	cd $KFS/sources
 	#wget http://www.linuxfromscratch.org/lfs/view/stable/wget-list
 	wget --input-file=wget-list --continue --directory-prefix=$KFS/sources
@@ -56,9 +59,9 @@ chown -v kfs $KFS/sources
 }
 
 main() {
-    create_part &&
-    format_part &&
-    mount_part &&
+    # create_part &&
+    # format_part &&
+    # mount_part &&
     fetch_src &&
     create_layout &&
     create_kfs
