@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+Green='\033[0;32m'  # Green
+
+echo -e "${Green}Enter your disk name, Ex: sda, nvme0n1 by type cmd lsblk"
+read disk
+
+
+Disk=/dev/$disk
+
+echo $Disk\1
