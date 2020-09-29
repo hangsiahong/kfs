@@ -10,6 +10,7 @@ cd file-5.39
 ./configure --prefix=/usr --host=$KFS_TGT
 make
 make DESTDIR=$KFS install
+libtool --finish /usr/lib
 
 cd $KFS/sources
 rm -rf file-5.39
